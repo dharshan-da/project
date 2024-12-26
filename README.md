@@ -23,332 +23,234 @@ Publish the website in the LocalHost.
 
 # PROGRAM :
 ``` python
+HTML
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dribble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a href="#Logo" class="navbar-brand mb-0 h1"><i>Dribble</i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">Shots</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Designers</a>
+            </li>
+            <li class="nav-item">
+              <a href="signup.html" class="nav-link">Sign up</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="text-center py-4 bg-dark text-white">
+      <div class="container">
+        <h1>What are you working on?</h2>
+            <br>
+            <p>"Bringing You the Best of Fashion, Tech, and More!"</p>
+        <div class="d-inline-flex gap-2">
+          <a href="#" class="btn btn-light">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container py-4">
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="card shadow rounded-3">
+            <img src="nature.png" class="card-img-top" alt="Joshua's design" height="250">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Joshua</h5>
+              <a href="#" class="btn btn-info btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow rounded-3">
+            <img src="eye.jpg" class="card-img-top" alt="Anderson's design" height="250">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Anderson</h5>
+              <a href="#" class="btn btn-info btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow rounded-3">
+            <img src="shot.jpg" class="card-img-top" alt="Style Designer's work" height="250">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Style Designer</h5>
+              <a href="#" class="btn btn-info btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow rounded-3">
+            <img src="shapes.webp" class="card-img-top" alt="Mathew's design" height="250">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Mathew</h5>
+              <a href="#" class="btn btn-info btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow rounded-3">
+            <img src="face.jpg" class="card-img-top" alt="Jslash's design" height="250">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Jslash</h5>
+              <a href="#" class="btn btn-info btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow rounded-3">
+            <img src="geometry.jpg" class="card-img-top" alt="Ulquira's design" height="250">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Ulquira</h5>
+              <a href="#" class="btn btn-info btn-sm">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 | Designed and developed by Rhudhra phriyamvadha K S</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+SIGN UP
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #000;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background: #fff;
+            color: #000;
+        }
+        .card-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            background: #f8f9fa;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .card-header img {
+            width: 30px;
+            height: 30px;
+        }
+        .btn-primary {
+            background-color: #000;
+            border: none;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #333;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #000;
+        }
+        .link:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+        .text-center a {
+            color: #000;
+        }
+        .text-center a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+    </style>
 </head>
-<style>
-    /* Reset and basic styles */
-body, h1, h2, p, a, input, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f5f5f5;
-    color: #333;
-}
-
-/* Top Bar Styling */
-.top-bar {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.search-bar {
-    margin-right: 15px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    outline: none;
-}
-
-.nav-item {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-.blue-text {
-    color: #007bff;
-    font-weight: bold;
-}
-
-.blue-text:hover {
-    text-decoration: underline;
-}
-
-/* Header Section */
-header {
-    background-image: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg'); /* Add your header image */
-    background-size: cover;
-    padding: 80px 20px;
-    text-align: center;
-    color: #fff;
-}
-
-.header-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.header-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.search-input {
-    padding: 10px;
-    width: 60%;
-    max-width: 500px;
-    border: none;
-    border-radius: 4px;
-    outline: none;
-}
-
-/* Trending Searches Section */
-.trending {
-    padding: 20px;
-    text-align: center;
-}
-
-.trending h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.trending-tags {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.trending-tags span {
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card h3 {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.card p {
-    font-size: 12px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-    position: relative;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.card:hover img {
-    transform: scale(1.2); /* Scale image to 120% on hover */
-}
-
-.card h3 {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.card p {
-    font-size: 12px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-/* Footer Section */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-    margin-top: 20px;
-}
-</style>
 <body>
-    <!-- Top Navigation Bar -->
-    <div class="top-bar">
-        <input type="text" class="search-bar" placeholder="Search...">
-        <a href="#" class="nav-item">Explore</a>
-        <a href="#" class="nav-item">Hire a Designer</a>
-        <a href="#" class="nav-item">Find Jobs</a>
-        <a href="#" class="nav-item">Blog</a>
-        <a href="#" class="nav-item blue-text">Sign up</a>
-        <a href="#" class="nav-item blue-text">Log in</a>
+    <div class="card p-4" style="width: 22rem;">
+        <div class="card-header">
+            Sign Up
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mt-3">Sign Up</button>
+            </form>
+        </div>
+        <div class="text-center mt-3">
+            <span>Already have an account? <a href="login.html" target="_blank" class="text-decoration-none link">Login</a></span>
+        </div>
     </div>
-
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <h1>Discover the world’s top designers</h1>
-            <p>Explore work from the most talented and accomplished designers ready to take on your next project</p>
-            <input type="text" class="search-input" placeholder="What are you looking for?">
-        </div>
-    </header>
-
-    <!-- Trending Searches Section -->
-    <section class="trending">
-        <h2>Trending Searches</h2>
-        <div class="trending-tags">
-            <span>landing page</span>
-            <span>e-commerce</span>
-            <span>mobile app</span>
-            <span>logo design</span>
-            <span>dashboard</span>
-            <span>icons</span>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery">
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer1.jpg" alt="Design Sample">
-            <h3>NANCY</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer2.jpg" alt="Design Sample">
-            <h3>MAXIE</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer3.jpg" alt="Design Sample">
-            <h3>WILL</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer4.jpg" alt="Design Sample">
-            <h3>MIKE</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer5.jpg" alt="Design Sample">
-            <h3>JANE</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer6.jpg" alt="Design Sample">
-            <h3>LUCAS</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer7.jpg" alt="Design Sample">
-            <h3>DUSTIN</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer8.jpg" alt="Design Sample">
-            <h3>STEAVE</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer9.jpg" alt="Design Sample">
-            <h3>ROBIN</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer10.jpg" alt="Design Sample">
-            <h3>JOYCE</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer11.jpg" alt="Design Sample">
-            <h3>HOPPER</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-
-        <div class="card">
-            <img src="C:\\Users\\admin\\Downloads\\designer12.jpg" alt="Design Sample">
-            <h3>JONADHAN</h3>
-            <p>Emote Team | 7.2k Views</p>
-        </div>
-        <!-- Add more cards as needed -->
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Design Portfolio. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Search functionality
-const searchBar = document.querySelector('.search-bar');
-
-searchBar.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault(); // Prevent default form submission
-        alert(Searching for: ${searchBar.value});
-    }
-});
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 ```
 # OUTPUT:
 
-![Screenshot 2024-12-23 000035](https://github.com/user-attachments/assets/9318a1de-d338-476d-9482-87d4510a2a99)
+![Screenshot 2024-12-25 211002](https://github.com/user-attachments/assets/da5ab7d5-3cb4-4366-a6ad-cd4e6789f3a7)
 
-![Screenshot 2024-12-23 000055](https://github.com/user-attachments/assets/500a92ca-1a65-492b-a012-53687159acad)
+![Screenshot 2024-12-25 211024](https://github.com/user-attachments/assets/d3f936b4-34e6-4cbc-948a-42a879148610)
+
 
 
 # RESULT:
