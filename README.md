@@ -1,4 +1,4 @@
-# Date:16.12.2024
+# Date:08.10.2025
 # AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
 
